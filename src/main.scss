@@ -9,7 +9,12 @@
 .priImg{
     margin-left: 5px;
 }
-.btn-secondary{
+.btn{
     border-radius: 8px !important;
     background-color: rgb(24, 24, 24);
+    border-color: none !important;
+}
+.card-text{
+    word-wrap: break-word;
+    max-width: 200px;
 }

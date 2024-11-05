@@ -5,4 +5,11 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Then add additional custom code here
+// Then add additional custom code here+
+.priImg{
+    margin-left: 5px;
+}
+.btn-secondary{
+    border-radius: 8px !important;
+    background-color: rgb(24, 24, 24);
+}

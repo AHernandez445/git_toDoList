@@ -11964,4 +11964,12 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+.priImg {
+  margin-left: 5px;
+}
+
+.btn-secondary {
+  border-radius: 8px !important;
+  background-color: rgb(24, 24, 24);
+}

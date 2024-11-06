@@ -2,19 +2,31 @@
 // Option A: Include all of Bootstrap
 
 // Include any default variable overrides here (though functions won't be available)
-
+$body-bg:#0C0C0C !default;
+$bg-black: #0C0C0C !default;
+$secondary: #F1846B !default;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here+
 .priImg{
     margin-left: 5px;
+    background-color: #F1846B;
+    // width: 35px;
+    // height: 35px;
+    margin: 5px !important;
+    border-radius: 3px;
 }
 .btn{
     border-radius: 8px !important;
-    background-color: rgb(24, 24, 24);
     border-color: none !important;
 }
 .card-text{
     word-wrap: break-word;
     max-width: 200px;
+}
+.cards{
+    max-width: 600px;
+}
+nav.border-buttom{
+    border-bottom-color:#F1846B !important;
 }

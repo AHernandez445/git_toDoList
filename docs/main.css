@@ -8407,6 +8407,8 @@ textarea.form-control-lg {
 
 .text-wrap {
   white-space: normal !important;
+  word-wrap: break-word;
+  max-width: 200px;
 }
 
 .text-nowrap {

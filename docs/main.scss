@@ -21,13 +21,16 @@ $text-success: white !default;
     border-radius: 8px !important;
     border-color: none !important;
 }
-.card-text{
+.card-body{
     word-wrap: break-word;
     max-width: 200px;
 }
-.cards{
-    max-width: 600px;
+.card{
+    max-width: 400px;
 }
 nav.border-buttom{
     border-bottom-color:#F1846B !important;
+}
+.checked{
+    text-decoration: line-through;
 }

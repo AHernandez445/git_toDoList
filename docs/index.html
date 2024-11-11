@@ -9,44 +9,60 @@
     </head>
 
     <body>
+        <!-- This is the navigation bar -->
         <nav class="navbar navbar-light border-bottom justify-content-between">
+          <!-- this is the image wrapped with an a tag to turn the image into a link also -->
             <a class="navbar-brand" href="toDoList.html">
                 <img src="../assets/Archive.png" width="40" alt="" class="priImg p-1">
             </a>
+            <!-- This is the button at the end of the navbar that creates a new todo list -->
             <a class="navbar-brand" href="#">
                 <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">new todo</button>
             </a>
         </nav>
         
         <!--modal itself-->
+        <!-- The modal is the thing that pops up once you click todo list -->
         <div class="modal fade text-white" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
+              <!-- This is the header section of the modal -->
               <div class="modal-header">
+                <!-- The actual new message section -->
                 <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
                 <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
+              <!-- the body section of the modal -->
             <div class="modal-body">
               <form>
                 <div class="mb-3">
+                  <!-- so the label and input sections are something called forms where there is a label and an input for the 
+                   section your typing and where it tells you what you want to type. the 'for' tells the computer what the label
+                   is representing for. and the 'id' is for the javascript. Essentially your supposed to use id's to be able to 
+                   access those elements in javascript. -->
                    <label for="card-recieve-title" class="col-form-label"><h5>Title of ToDo</h5></label>
                    <input type="text" class="form-control text-white" id="card-recieve-title">
                 </div>
                 <div class="mb-3">
-                   <!-- <label for="message-text" class="col-form-label">Message:</label> -->
-                    <label for="card-recieve-text" class="col-form-label">ToDo</label>
+                  <!-- this is the fat part of the modal where you can type a paragraph -->
+                  <label for="card-recieve-text" class="col-form-label">ToDo</label>
                   <textarea class="form-control text-white" id="card-recieve-text"></textarea>
                 </div>
               </form>
               </div>
+              <!-- And this is the modal footer so the end of the modal which really just holds two buttons the cancel and the finish button -->
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <!-- the finish button is by far the more interesting one. Essentially the idea of this button is that 'onclick' it will run that 
+               function called addtask(). go into the js file if you want to know what the functions does. -->
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="addTask()">Finish</button>
             </div>
           </div>
         </div>
       </div>
-
+        <!-- This section represents what the actual boxes of todolists are going to look like. so it has all the styling and it is the 
+         containers for the boxes themselves. The commeents at the button are what actually helped figure out what the boxes are going to be
+         in the javascript -->
         <main class="container d-flex flex-wrap justify-content-around cards" id="card">
           <div id="task-container" class="container d-flex flex-wrap justify-content-around">
             <div class="card m-2 bg-secondary" id="divOne">
